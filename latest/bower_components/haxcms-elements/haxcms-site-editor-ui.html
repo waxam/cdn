@@ -14,7 +14,7 @@ haxcms editor element buttons that you see
 
 <dom-module id="haxcms-site-editor-ui">
   <template>
-    <style>
+    <style is="custom-style">
       :host {
         display: block;
       }
@@ -26,10 +26,17 @@ haxcms editor element buttons that you see
         padding: 2px;
         width: 40px;
         height: 40px;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1000;
+        background-color: var(--haxcms-color, #ff4081);
+        transition: all .6s linear;
+      }
+      :host[page-allowed] #editbutton,
+      :host[outline-allowed] #outlinebutton,
+      :host[outline-allowed] #manifestbutton {
         visibility: visible;
         opacity: 1;
-        transition: all .4s ease;
-        z-index: 1000;
       }
       #editbutton {
         right: 92px;
@@ -52,13 +59,13 @@ haxcms editor element buttons that you see
         background-color: var(--paper-blue-500) !important;
       }
     </style>    
-    <paper-fab id="manifestbutton" icon="icons:settings"></paper-fab>
-    <paper-tooltip for="manifestbutton" position="top" offset="14">site details</paper-tooltip>
     <paper-fab id="editbutton" icon="[[__editIcon]]"></paper-fab>
     <paper-tooltip for="editbutton" position="top" offset="14">[[__editText]]</paper-tooltip>
+    <paper-fab id="manifestbutton" icon="icons:settings"></paper-fab>
+    <paper-tooltip for="manifestbutton" position="top" offset="14">site details</paper-tooltip>
     <paper-fab id="outlinebutton" icon="icons:list"></paper-fab>
     <paper-tooltip for="outlinebutton" position="top" offset="14">edit outline</paper-tooltip>
-    </template>
+  </template>
   <script>
     Polymer({
       is: 'haxcms-site-editor-ui',
@@ -68,6 +75,36 @@ haxcms editor element buttons that you see
         'manifestbutton.tap': '_manifestButtonTap',
       },
       properties: {
+        /**
+         * Active item of the page being worked on, JSON outline schema item format
+         */
+        activeItem: {
+          type: Object,
+          value: {},
+          observer: '_activeItemChanged',
+        },
+        /**
+         * Outline of items in json outline schema format
+         */
+         manifest: {
+          type: Object,
+         },
+        /**
+         * page allowed
+         */
+        pageAllowed: {
+          type: Boolean,
+          value: false,
+          reflectToAttribute: true,
+        },
+        /**
+         * outline allowed
+         */
+        outlineAllowed: {
+          type: Boolean,
+          value: false,
+          reflectToAttribute: true,
+        },
         /**
          * if the page is in an edit state or not
          */
@@ -98,6 +135,19 @@ haxcms editor element buttons that you see
           value: false,
           notify: true,
         },
+      },
+      /**
+       * active item changed
+       */
+      _activeItemChanged: function (newValue, oldValue) {
+        if (newValue.id) {
+          this.pageAllowed = true;
+          this.outlineAllowed = false;
+        }
+        else {
+          this.pageAllowed = false;
+          this.outlineAllowed = true;
+        }
       },
       /**
        * toggle state on button tap
