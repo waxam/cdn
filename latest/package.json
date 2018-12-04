@@ -1,0 +1,10 @@
+{
+    "name": "waxam-cdn",
+    "version": "0.0.1",
+    "description": "Waxam CDN references to pull tooling together",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@lrnwebcomponents/baseline-build-hax": "^0.0.37",
+        "@lrnwebcomponents/haxcms-elements": "^0.0.37"
+    }
+}
