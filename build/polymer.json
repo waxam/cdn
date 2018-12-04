@@ -1,22 +1,22 @@
 {
-  "entrypoint": "dist\\build.html",
+  "entrypoint": "dist/build.html",
   "fragments": [],
   "sources": [
-    "dist\\build.html"
+    "dist/build.html"
   ],
   "extraDependencies": [
-    "node_modules\\@lrnwebcomponents\\*\\*.js",
-    "node_modules\\@lrnwebcomponents\\*\\lib\\*",
-    "node_modules\\@lrnwebcomponents\\code-editor\\lib\\ace-builds\\src-min-noconflict\\mode-html.js",
-    "node_modules\\@lrnwebcomponents\\code-editor\\lib\\ace-builds\\src-min-noconflict\\theme-monokai.js",
-    "node_modules\\@lrnwebcomponents\\code-editor\\lib\\ace-builds\\src-min-noconflict\\worker-html.js",
-    "node_modules\\@lrnwebcomponents\\lrn-calendar\\lib\\ical.js\\build\\ical.js",
-    "node_modules\\@lrnwebcomponents\\wave-player\\lib\\wavesurfer.js\\dist\\wavesurfer.js",
-    "!C:\\Documents and Settings\\Bryan\\Documents\\git\\waxam\\cdn\\node_modules\\@lrnwebcomponents\\*\\*.story.js",
-    "node_modules\\@webcomponents\\webcomponentsjs\\*.js",
-    "!C:\\Documents and Settings\\Bryan\\Documents\\git\\waxam\\cdn\\node_modules\\@webcomponents\\webcomponentsjs\\gulpfile.js",
-    "node_modules\\@webcomponents\\webcomponentsjs\\bundles\\*.js",
-    "bower_components\\webcomponentsjs\\*.js"
+    "bower_components/webcomponentsjs/*.js",
+    "node_modules/@lrnwebcomponents/*/*.js",
+    "node_modules/@lrnwebcomponents/*/lib/*",
+    "node_modules/@lrnwebcomponents/code-editor/lib/ace-builds/src-min-noconflict/mode-html.js",
+    "node_modules/@lrnwebcomponents/code-editor/lib/ace-builds/src-min-noconflict/theme-monokai.js",
+    "node_modules/@lrnwebcomponents/code-editor/lib/ace-builds/src-min-noconflict/worker-html.js",
+    "node_modules/@lrnwebcomponents/lrn-calendar/lib/ical.js/build/ical.js",
+    "node_modules/@lrnwebcomponents/wave-player/lib/wavesurfer.js/dist/wavesurfer.js",
+    "!node_modules/@lrnwebcomponents/*/*.story.js",
+    "node_modules/@webcomponents/webcomponentsjs/*.js",
+    "!node_modules/@webcomponents/webcomponentsjs/gulpfile.js",
+    "node_modules/@webcomponents/webcomponentsjs/bundles/*.js"
   ],
   "builds": [
     {
@@ -62,5 +62,8 @@
     "rules": [
       "polymer-3"
     ]
-  }
+  },
+  "npm": true,
+  "componentDir": "node_modules/",
+  "moduleResolution": "node"
 }
