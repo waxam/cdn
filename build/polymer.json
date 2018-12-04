@@ -21,6 +21,8 @@
   "builds": [
     {
       "name": "es6",
+      "autoBasePath": true,
+      "basePath": true,
       "browserCapabilities": [
         "es2015",
         "modules"
@@ -39,6 +41,8 @@
     },
     {
       "name": "es5-amd",
+      "autoBasePath": true,
+      "basePath": true,
       "js": {
         "minify": true,
         "compile": true,
