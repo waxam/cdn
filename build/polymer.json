@@ -6,23 +6,14 @@
   ],
   "extraDependencies": [
     "bower_components/webcomponentsjs/*.js",
-    "node_modules/@lrnwebcomponents/*/*.js",
-    "node_modules/@lrnwebcomponents/*/lib/*",
-    "node_modules/@lrnwebcomponents/code-editor/lib/ace-builds/src-min-noconflict/mode-html.js",
-    "node_modules/@lrnwebcomponents/code-editor/lib/ace-builds/src-min-noconflict/theme-monokai.js",
-    "node_modules/@lrnwebcomponents/code-editor/lib/ace-builds/src-min-noconflict/worker-html.js",
-    "node_modules/@lrnwebcomponents/lrn-calendar/lib/ical.js/build/ical.js",
-    "node_modules/@lrnwebcomponents/wave-player/lib/wavesurfer.js/dist/wavesurfer.js",
-    "!node_modules/@lrnwebcomponents/*/*.story.js",
     "node_modules/@webcomponents/webcomponentsjs/*.js",
     "!node_modules/@webcomponents/webcomponentsjs/gulpfile.js",
-    "node_modules/@webcomponents/webcomponentsjs/bundles/*.js"
+    "node_modules/@webcomponents/webcomponentsjs/bundles/*.js",
+    "node_modules/web-animations-js/web-animations-next-lite.min.js"
   ],
   "builds": [
     {
       "name": "es6",
-      "autoBasePath": true,
-      "basePath": true,
       "browserCapabilities": [
         "es2015",
         "modules"
@@ -37,12 +28,10 @@
         "minify": true
       },
       "bundle": false,
-      "addServiceWorker": true
+      "addServiceWorker": false
     },
     {
       "name": "es5-amd",
-      "autoBasePath": true,
-      "basePath": true,
       "js": {
         "minify": true,
         "compile": true,
@@ -55,7 +44,7 @@
         "minify": true
       },
       "bundle": false,
-      "addServiceWorker": true
+      "addServiceWorker": false
     }
   ],
   "lint": {
