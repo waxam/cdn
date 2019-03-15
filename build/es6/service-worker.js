@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["dist/build-full.js","8fc0093de0d7d91a0a6d5a59592afb68"],["dist/build.html","a36f9470ac42d076d05b280730d27e2b"],["node_modules/web-animations-js/web-animations-next-lite.min.js","6579d2914a8920d46d8cc74a3cff3dec"]];
+var precacheConfig = [["dist/build-full.js","40a8d32d9f0b234806c01e1de0e9b70d"],["dist/build.html","a20136035939176e556f6c2e5b0e9eeb"],["node_modules/web-animations-js/web-animations-next-lite.min.js","6579d2914a8920d46d8cc74a3cff3dec"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
