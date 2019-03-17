@@ -1464,6 +1464,26 @@
       "type": "script",
       "weight": 1
     },
+    "node_modules/%40lrnwebcomponents/haxcms-elements/lib/ui-components/templates/basic-template.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/%40lrnwebcomponents/haxcms-elements/lib/ui-components/layout/site-footer.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/%40lrnwebcomponents/license-element/license-element.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/%40lrnwebcomponents/haxcms-elements/lib/ui-components/layout/site-modal.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/%40lrnwebcomponents/simple-modal/lib/simple-modal-template.js": {
+      "type": "script",
+      "weight": 1
+    },
     "node_modules/%40lrnwebcomponents/outline-player/outline-player.js": {
       "type": "script",
       "weight": 1
@@ -1533,10 +1553,6 @@
       "weight": 1
     },
     "node_modules/%40lrnwebcomponents/image-compare-slider/image-compare-slider.js": {
-      "type": "script",
-      "weight": 1
-    },
-    "node_modules/%40lrnwebcomponents/license-element/license-element.js": {
       "type": "script",
       "weight": 1
     },
