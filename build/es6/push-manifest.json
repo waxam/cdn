@@ -1460,11 +1460,19 @@
       "type": "script",
       "weight": 1
     },
+    "node_modules/%40lrnwebcomponents/haxcms-elements/lib/ui-components/navigation/site-dot-indicator.js": {
+      "type": "script",
+      "weight": 1
+    },
     "node_modules/%40lrnwebcomponents/haxcms-elements/lib/core/themes/haxcms-basic-theme.js": {
       "type": "script",
       "weight": 1
     },
     "node_modules/%40lrnwebcomponents/haxcms-elements/lib/ui-components/templates/basic-template.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/%40lrnwebcomponents/scroll-button/scroll-button.js": {
       "type": "script",
       "weight": 1
     },
