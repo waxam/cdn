@@ -1,0 +1,7 @@
+{
+    "monaco-element": "@lrnwebcomponents/code-editor/lib/monaco-element/monaco-element.js",
+    "figure-label": "@lrnwebcomponents/figure-label/figure-label.js",
+    "h-a-x": "@lrnwebcomponents/h-a-x/h-a-x.js",
+    "paper-button": "@polymer/paper-button/paper-button.js",
+    "local-time": "time-elements/dist/time-elements.js"
+}
