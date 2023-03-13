@@ -2,7 +2,7 @@ window.process = {env: {NODE_ENV: "production"}};
 var cdn = "./";
 var ancient=false;
 if (window.__appCDN) {
-  cdn = window.__appCDN;
+cdn = window.__appCDN;
 }
 window.WCAutoloadRegistryFile = cdn + "wc-registry.json";
 try {
