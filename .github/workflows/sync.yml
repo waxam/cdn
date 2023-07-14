@@ -21,5 +21,4 @@ jobs:
 
     - name: Copy files to the s3 website content bucket
       run:
-        #aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET }} 
-        aws s3 sync dist s3://arn:aws:s3:us-east-1:119111207811:waxam140
+        aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET }} 
