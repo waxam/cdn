@@ -1,0 +1,1 @@
+import"../node_modules/@lrnwebcomponents/app-hax/app-hax.js";
