@@ -49,4 +49,4 @@ jobs:
         # comma-separated string, send email to
         to: btopro@outlook.com,davidjfusco@gmail.com
         # from email name
-        from: HAX CDN
+        from: HAX CDN 
