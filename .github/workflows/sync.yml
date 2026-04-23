@@ -21,10 +21,7 @@ jobs:
 
     - name: Copy files to the s3 website content bucket
       run: 
-        aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET_SIMPLE }} \
-        --delete \
-        --exclude ".git" \
-        --exclude ".git/*"
+        aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET_SIMPLE }} --delete --exclude ".git" --exclude ".git/*"
 
     - name: Cloudfront validation
       uses: chetan/invalidate-cloudfront-action@master
